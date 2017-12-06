@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/football">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="180dp"
+            android:layout_marginStart="180dp"
+            android:layout_marginTop="15dp"
+            android:text="@string/versus"
+            android:textColor="#000000"
+            android:textSize="32sp" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="110dp"
+            android:layout_marginStart="110dp"
+            android:layout_marginTop="70dp"
+            android:src="@drawable/golo" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="240dp"
+            android:layout_marginStart="240dp"
+            android:layout_marginTop="70dp"
+            android:src="@drawable/golo" />
+
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="110dp"
+            android:layout_marginStart="110dp"
+            android:layout_marginTop="120dp"
+            android:src="@drawable/faltas" />
+
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="240dp"
+            android:layout_marginStart="230dp"
+            android:layout_marginTop="120dp"
+            android:src="@drawable/faltas" />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="240dp"
+            android:layout_marginStart="260dp"
+            android:layout_marginTop="190dp"
+            android:src="@drawable/offside" />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="110dp"
+            android:layout_marginStart="105dp"
+            android:layout_marginTop="190dp"
+            android:src="@drawable/offside" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="105dp"
+            android:layout_marginStart="105dp"
+            android:layout_marginTop="250dp"
+            android:src="@drawable/yellowcard" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="200dp"
+            android:layout_marginStart="256dp"
+            android:layout_marginTop="250dp"
+            android:src="@drawable/yellowcard" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="200dp"
+            android:layout_marginStart="250dp"
+            android:layout_marginTop="305dp"
+            android:src="@drawable/redcard" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="105dp"
+            android:layout_marginStart="105dp"
+            android:layout_marginTop="305dp"
+            android:src="@drawable/redcard" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="239dp"
+            android:layout_marginStart="239dp"
+            android:layout_marginTop="360dp"
+            android:src="@drawable/corners" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="105dp"
+            android:layout_marginStart="110dp"
+            android:layout_marginTop="360dp"
+            android:src="@drawable/corners" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:context="com.example.android.footballstatisticscounter.MainActivity">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="serif"
+                android:text="@string/equipaA"
+                android:textColor="#0288D1"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/golos_equipa_a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:onClick="golosTeamA"
+                android:text="@string/numberStats"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/faltas_equipa_a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"
+                android:onClick="faltasTeamA"
+                android:text="@string/numberStats"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/foras_equipa_a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:onClick="forasEquipaA"
+                android:text="@string/numberStats"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/c_amarelos_a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="15dp"
+                android:onClick="amarelosTeamA"
+                android:text="@string/numberStats"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/expulsoes_a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="9dp"
+                android:onClick="expulsoesTeamA"
+                android:text="@string/numberStats"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/cantos_teamA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="9dp"
+                android:onClick="cantosA"
+                android:text="@string/numberStats"
+                android:textSize="20sp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:context="com.example.android.footballstatisticscounter.MainActivity">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="250dp"
+                android:layout_marginStart="250dp"
+                android:layout_marginTop="20sp"
+                android:fontFamily="serif"
+                android:text="@string/equipaB"
+                android:textColor="#F44336"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/golos_equipa_b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="280dp"
+                android:layout_marginStart="280dp"
+                android:layout_marginTop="10dp"
+                android:onClick="golosTeamB"
+                android:text="@string/numberStats"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/faltas_equipa_b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="280dp"
+                android:layout_marginStart="280dp"
+                android:onClick="faltasTeamB"
+                android:text="@string/numberStats"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/foras_equipa_b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="280dp"
+                android:layout_marginStart="280dp"
+                android:layout_marginTop="10dp"
+                android:onClick="forasJogoB"
+                android:text="@string/numberStats"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/c_amarelos_b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="280dp"
+                android:layout_marginStart="280dp"
+                android:layout_marginTop="15dp"
+                android:onClick="amarelosTeamB"
+                android:text="@string/numberStats"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/expulsoes_b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="280dp"
+                android:layout_marginStart="280dp"
+                android:layout_marginTop="9dp"
+                android:onClick="expulsoesB"
+                android:text="@string/numberStats"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/cantos_teamB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="280dp"
+                android:layout_marginStart="280dp"
+                android:layout_marginTop="9dp"
+                android:onClick="cantosB"
+                android:text="@string/numberStats"
+                android:textSize="20sp" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="70dp"
+            android:text="@string/golos"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="130dp"
+            android:text="@string/faltas"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="190dp"
+            android:text="@string/forasDeJogo"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="250dp"
+            android:text="@string/cartoesAmarelos"
+            android:textColor="#FFFF00"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="310dp"
+            android:text="@string/expulsoes"
+            android:textColor="#BF360C"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="370dp"
+            android:text="@string/cantos"
+            android:textColor="#01579B"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/reset_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="420dp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:onClick="resetScore"
+            android:text="@string/reset"
+            android:textAllCaps="true"
+            android:textSize="20sp" />
+
+
+    </RelativeLayout>
+</ScrollView>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Football Statistics Counter</string>
+    <string name="equipaA" translatable="true">Team A</string>
+    <string name="equipaB" translatable="true">"Team B "</string>
+    <string name="golos" translatable="true">Goals</string>
+    <string name="forasDeJogo" translatable="true">Offsides</string>
+    <string name="cartoesAmarelos" translatable="true">Yellow Cards</string>
+    <string name="faltas" translatable="true">Fouls</string>
+    <string name="expulsoes" translatable="true">Expelled</string>
+    <string name="reset" translatable="true">Reset</string>
+    <string name="numberStats" translatable="true">0</string>
+    <string name="cantos" translatable="true">Corners</string>
+</resources>

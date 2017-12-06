@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name" translatable="false">Football Statistics Counter</string>
+    <string name="numberStats">0</string>
+    <string name = "equipaA" translatable="false">Equipa A</string>
+    <string name = "equipaB" translatable="false">Equipa B</string>
+    <string name = "golos" translatable="false">Golos</string>
+    <string name="forasDeJogo" translatable="false">Foras de Jogo</string>
+    <string name="cartoesAmarelos" translatable="false">C. Amarelos</string>
+    <string name="faltas" translatable="false">Faltas</string>
+    <string name="expulsoes" translatable="false">Expulsões</string>
+    <string name="reset" translatable="false">Reset</string>
+    <string name="cantos">Cantos</string>
+    <string name="versus">X</string>
+</resources>
